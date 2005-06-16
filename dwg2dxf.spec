@@ -19,7 +19,7 @@ A command line program to convert AutoCad drawing files (*.dwg) into
 Drawing Interchange Format (*.dxf) files.
 
 %description -l pl
-Konsolowy program konwertuj±cy pliki AutoCad'a (*.dwf) do Drawing
+Konsolowy program konwertuj±cy pliki AutoCad'a (*.dwg) do Drawing
 Interchange Format (*.dxf), potem taki plik *.dxf mo¿na otworzyæ za
 pomoc± QCAD'a.
 
