@@ -1,0 +1,16 @@
+diff -uNr dwg2dxf-2.1.orig/dwg2dxf/main.cpp dwg2dxf-2.1/dwg2dxf/main.cpp
+--- dwg2dxf-2.1.orig/dwg2dxf/main.cpp	2002-08-18 00:49:37.000000000 +0200
++++ dwg2dxf-2.1/dwg2dxf/main.cpp	2005-06-16 11:40:59.000000000 +0200
+@@ -254,10 +254,10 @@
+ 
+   strcpy(initfilepath,argv0);
+   if ((cptr=strrchr(initfilepath,PATHCHAR))==NULL) {
+-    strcpy(initfilepath,"adinit.dat");  /* current dir only */
++    strcpy(initfilepath,"/usr/share/dwg2dxf/adinit.dat");  /* current dir only */
+     return(1);
+   }
+-  strcpy(&cptr[1],"adinit.dat");
++  strcpy(&cptr[1],"/usr/share/dwg2dxf/adinit.dat"); /* thanks to agaran */
+   return(1);
+ }
+ 
