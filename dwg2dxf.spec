@@ -9,7 +9,9 @@ Source0:	http://dl.sourceforge.net/lx-viewer/%{name}-%{version}.tar.gz
 # Source0-md5:	c1ba5f874d23746360cd73986830a249
 Patch0:		%{name}-%{version}-shared-files.patch
 URL:		http://sourceforge.net/projects/lx-viewer/
-#BuildRequires:
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,19 +37,18 @@ pomoc± QCAD'a.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_datadir}/%{name}
-install -d $RPM_BUILD_ROOT/%{_defaultdocdir}/%{name}-%{version}
-install %{name}/adinit.dat $RPM_BUILD_ROOT/%{_datadir}/%{name}/
-install %{name}/docs/en/index*.html $RPM_BUILD_ROOT/%{_defaultdocdir}/%{name}-%{version}/
+
+install %{name}/adinit.dat $RPM_BUILD_ROOT/%{_datadir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc %{name}/docs/en/index*.html
 %attr(755,root,root) %{_bindir}/%{name}
-%attr(644,root,root) %{_datadir}/%{name}/adinit.dat
-%doc %{_defaultdocdir}/%{name}-%{version}/*.html
+%{_datadir}/%{name}
