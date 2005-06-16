@@ -5,7 +5,7 @@ Version:	2.1
 Release:	1
 License:	GPL
 Group:		Applications/Graphics
-Source0:	http://nchc.dl.sourceforge.net/sourceforge/lx-viewer/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/lx-viewer/%{name}-%{version}.tar.gz
 # Source0-md5:	c1ba5f874d23746360cd73986830a249
 Patch0:		%{name}-%{version}-shared-files.patch
 URL:		http://sourceforge.net/projects/lx-viewer/
@@ -13,12 +13,13 @@ URL:		http://sourceforge.net/projects/lx-viewer/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A command line program to convert AutoCad drawing files (*.dwg) 
-into Drawing Interchange Format (*.dxf) files.
+A command line program to convert AutoCad drawing files (*.dwg) into
+Drawing Interchange Format (*.dxf) files.
+
 %description -l pl
-Konsolowy program konwertuj±cy pliki AutoCad'a (*.dwf) do 
-Drawing Interchange Format (*.dxf), potem taki plik *.dxf mo¿na
-otworzyæ za pomoc± QCAD'a.
+Konsolowy program konwertuj±cy pliki AutoCad'a (*.dwf) do Drawing
+Interchange Format (*.dxf), potem taki plik *.dxf mo¿na otworzyæ za
+pomoc± QCAD'a.
 
 %prep
 %setup -q
