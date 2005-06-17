@@ -15,11 +15,11 @@ BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A command line program to convert AutoCad drawing files (*.dwg) into
+A command line program to convert AutoCAD drawing files (*.dwg) into
 Drawing Interchange Format (*.dxf) files.
 
 %description -l pl
-Konsolowy program konwertuj±cy pliki AutoCada (*.dwg) do Drawing
+Konsolowy program konwertuj±cy pliki AutoCAD-a (*.dwg) do Drawing
 Interchange Format (*.dxf), potem taki plik *.dxf mo¿na otworzyæ za
 pomoc± QCada.
 
