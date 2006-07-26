@@ -42,7 +42,7 @@ install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{name}/adinit.dat $RPM_BUILD_ROOT/%{_datadir}/%{name}
+install %{name}/adinit.dat $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
