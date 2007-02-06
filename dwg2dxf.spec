@@ -2,7 +2,7 @@ Summary:	Command line converter for *.dwg files into *.dxf
 Summary(pl):	Program konwertuj±cy pliki z *.dwg do *.dxf
 Name:		dwg2dxf
 Version:	2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/lx-viewer/%{name}-%{version}.tar.gz
