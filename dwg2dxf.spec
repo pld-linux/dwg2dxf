@@ -1,5 +1,5 @@
 Summary:	Command line converter for *.dwg files into *.dxf
-Summary(pl):	Program konwertuj±cy pliki z *.dwg do *.dxf
+Summary(pl.UTF-8):   Program konwertujÄ…cy pliki z *.dwg do *.dxf
 Name:		dwg2dxf
 Version:	2.1
 Release:	2
@@ -18,10 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A command line program to convert AutoCAD drawing files (*.dwg) into
 Drawing Interchange Format (*.dxf) files.
 
-%description -l pl
-Konsolowy program konwertuj±cy pliki AutoCAD-a (*.dwg) do Drawing
-Interchange Format (*.dxf), potem taki plik *.dxf mo¿na otworzyæ za
-pomoc± QCada.
+%description -l pl.UTF-8
+Konsolowy program konwertujÄ…cy pliki AutoCAD-a (*.dwg) do Drawing
+Interchange Format (*.dxf), potem taki plik *.dxf moÅ¼na otworzyÄ‡ za
+pomocÄ… QCada.
 
 %prep
 %setup -q
