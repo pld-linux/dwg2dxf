@@ -1,5 +1,5 @@
 Summary:	Command line converter for *.dwg files into *.dxf
-Summary(pl.UTF-8):   Program konwertujący pliki z *.dwg do *.dxf
+Summary(pl.UTF-8):	Program konwertujący pliki z *.dwg do *.dxf
 Name:		dwg2dxf
 Version:	2.1
 Release:	2
